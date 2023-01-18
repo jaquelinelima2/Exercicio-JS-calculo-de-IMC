@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+  --primary-color: rgb(165, 64, 111);
+  --secundary-color: rgb(245, 255, 154);
+  --button-color:  rgb(210, 105, 30);
+  --button-color-dark:  rgb(175, 73, 0);
+  --border-color-button:  rgba(255, 127, 80, 0.575);
+  --border-color-input:  rgba(255, 222, 173, 0.473);
+  --resultado-color-correto: rgb(129, 1, 76);
+   --resultado-color-incorreto:rgb(228, 8, 8);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+}
+
+.container{
+  max-width: 550px;
+  margin: 8px auto;
+  background: var(--secundary-color);
+  padding: 18px 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.2em;
+  border-radius: 1em;
+}
+
+.container-imc-resultado{
+  display: flex;
+  gap:1em;
+  justify-content: center;
+}
+
+.calcule-IMC-dados{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#calcule-IMC button{
+  margin-top: 1em;
+}
+
+.container h1{
+  text-align: center;
+}
+
+#formulario{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#formulario button{
+  margin: 1em auto 0 auto;
+  width: 200px;
+  height: 2rem;
+  border-radius: 1em;
+  border-color: var(--border-color-button);
+  background-color: var(--button-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#formulario button:hover{
+  background: var(--button-color-dark);
+}
+
+#formulario input{
+  padding: 0.8em;
+  border-radius: 0.5em;
+  border-color: var(--border-color-input);
+}
+
+#formulario input:focus {
+  outline: 1.5px solid var(--button-color-dark);
+}
+
+#formulario h2{
+  text-align: center;
+}
+
+.paragrafo-resultado, .resultado-incorreto{
+  background-color:var(--resultado-color-correto);
+  color: rgb(240, 248, 255);
+  padding: 10px 10px;
+  border-radius: 0.5em;
+}
+
+.resultado-incorreto{
+  background:var(--resultado-color-incorreto);
+}
