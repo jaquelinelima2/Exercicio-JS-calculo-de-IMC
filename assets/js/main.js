@@ -22,6 +22,9 @@ form.addEventListener('submit', function (event) {
   const resultadoIMC = faixaIMC(imc);
   const msg = `Seu IMC é ${imc}, você tem ${resultadoIMC}.`;
   retornarIMC(msg, true);
+
+  /*console.log('Evento prevenido');
+  retornarIMC();*/
 });
 
 function calcularIMC(peso, altura) {
@@ -82,3 +85,26 @@ function faixaIMC(imc) {
     return faixa[0];
   }
 }
+
+/*Quais dados precisei para fazer essa função?
+ 1 - div que vai exibir o resultado
+
+ O que devo fazer com os dados?
+ 1 - Exibir um parágrafo com o resultado 
+ 2 - Adicionar uma classe a esse parágráfo para a  manipulação do mesmo.
+ 3 - Adicionar esse parágrafo criado a variável que vai  retornar o resultado.
+
+ Resultado esperado:
+ parágrafos exibidos em lista abaixo do botão
+
+ Sequência de passos:
+ 1 - Criar a função com o parametro que ela irá receber
+ 2 - Capturar a variável que vai "ativar" a função
+ 3 - Esvaziar a variável 
+ 4 - Criar o parágrafo
+ 5 - Adicionar uma classe ao parágrafo
+ 6 - Adicionar o parágrafo a variável capturada que ira exibir o resultado.
+
+
+
+*/
